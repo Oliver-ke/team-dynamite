@@ -1,0 +1,29 @@
+body {
+    font-family: "Raleway", sans-serif;
+  }
+  p {
+    font-size: 17px;
+  }
+  .sidenav-container {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+  }
+  .sidenav-container div{
+    margin-bottom: 8%;
+    margin-left: 5%;
+  }
+  .sidenav-links{
+    color: gray;
+    font-size: 20px;
+  }
+  .sidenav-links:hover{
+    text-decoration: none;
+  }
+
+  /* THIS IS THE STYLING FOR THE DESKTOP SIDENAV */
+  @media only screen and (max-width: 500px){
+    .entire-sidenav{
+      display: none;
+    }
+  }

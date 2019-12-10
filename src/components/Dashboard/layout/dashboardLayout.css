@@ -1,0 +1,41 @@
+.dashboard-nav{
+    background-color: #0D1B4C;
+}
+.brand-container{
+    background-color: white;
+}
+
+.dashboard-nav-items{
+    position: absolute;
+    right: 0;
+    color: white;
+}
+.mobile-nav{
+    background-color: #E9EEF4;
+    padding-left: 5%;
+    display: flex;
+    padding: 2%;
+}
+.mobile-nav div{
+    margin-left: 5%;
+}
+
+@media only screen and (min-width: 600px){
+    .mobile-nav{
+      display: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px){
+    .hamburger-icon{
+        display: none;
+    }
+}

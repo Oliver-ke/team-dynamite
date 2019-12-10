@@ -4,6 +4,7 @@ import Landing from './Landing/';
 import Login from './Login/';
 import Error from './Error/';
 import '../index.css';
+import Dashboard from './Dashboard/layout/dashboardLayout';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Switch>
         <Route path="/" component={Landing} exact />
         <Route path="/auth" component={Login} />
+        <Route path="/dashboard" component={Dashboard} />
         <Route component={Error} />
       </Switch>
     </Router>
