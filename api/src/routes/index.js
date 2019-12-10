@@ -1,7 +1,10 @@
-import adminRoutes from './adminRoutes'
-import userRoutes from './userRoutes'
+import express from 'express';
+import adminRoutes from './api/adminRoutes';
+import userRoutes from './api/userRoutes';
 
-export {
-    adminRoutes,
-    userRoutes,
-}
+const router = express.Router();
+
+router.use('/admin', adminRoutes);
+router.use('/user', userRoutes);
+
+export default router;
