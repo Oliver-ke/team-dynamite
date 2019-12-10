@@ -1,0 +1,26 @@
+header {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+
+header a {
+  border: 3px solid #0d1b4c;
+  border-radius: 8px;
+  color: #0d1b4c;
+  background: transparent;
+  padding: 1rem 2rem;
+  font-weight: bold;
+}
+header a:hover {
+  transform: translateY(-3px);
+}
+
+@media only screen and (max-width: 600px) {
+  header img {
+    width: 50%;
+    height: auto;
+  }
+}

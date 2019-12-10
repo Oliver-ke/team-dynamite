@@ -1,0 +1,109 @@
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+}
+.login-header {
+  display: none;
+  padding: 1rem;
+}
+.left-content,
+.right-content {
+  flex: 1;
+}
+.left-content {
+  background: #f3ecc8;
+  padding: 3rem;
+}
+.left-content h1 {
+  margin: 8rem 5rem 2rem;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.left-content p {
+  font-size: 40px;
+  margin: 0 5rem;
+}
+.left-content span {
+  color: #0d1b4c;
+  font-weight: 700;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+.right-content img {
+  object-fit: none;
+}
+
+.right-content form {
+  padding: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.form-group label {
+  font-weight: bolder;
+  color: #0d1b4c;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.form-group input {
+  background: #f4f4f4;
+  border-radius: 5px;
+  padding: 15px 10px;
+  font-size: 18px;
+  border: 1px solid #0d1b4c;
+}
+
+.form-group input::placeholder {
+  color: rgba(0, 0, 0, 0.79);
+}
+
+.right-content button {
+  background: #0d1b4c;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  padding: 15px 10px;
+  border: 1px solid #0d1b4c;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .left-content h1 {
+    margin: 8rem 2rem 2rem;
+    font-weight: 900;
+    font-size: 28px;
+  }
+
+  .left-content p {
+    font-size: 28px;
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left-content {
+    display: none;
+    padding: 0;
+  }
+  .right-content {
+    padding: 0;
+  }
+  .login-header {
+    display: block;
+  }
+}
