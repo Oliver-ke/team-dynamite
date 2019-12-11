@@ -4,17 +4,17 @@
 	"description": "this is the entire api built for our overall application",
 	"main": "server.js",
 	"scripts": {
-		"build-babel": "babel -d ./build ./src -s",
+		"build-babel": "babel -d ./build ./src -s --copy-files",
 		"build": "npm run clean && npm run build-babel",
 		"start": "npm run build && node ./build/server.js",
-		"dev": "npm run rmKey && nodemon --exec babel-node ./src/server.js",
-		"rmKey": "rm keys.json",
+		"dev": "nodemon --exec babel-node ./src/server.js",
 		"clean": "rm -rf build",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "dynamite",
 	"license": "ISC",
 	"dependencies": {
+		"@babel/cli": "^7.7.5",
 		"@babel/core": "^7.7.5",
 		"@babel/node": "^7.7.4",
 		"@babel/preset-env": "^7.7.6",
@@ -22,7 +22,6 @@
 		"babel-core": "^6.26.3",
 		"babel-plugin-transform-object-rest-spread": "^6.26.0",
 		"babel-plugin-transform-runtime": "^6.23.0",
-		"babel-preset-env": "^1.7.0",
 		"babel-watch": "^7.0.0",
 		"bcryptjs": "^2.4.3",
 		"consola": "^2.11.0",
@@ -37,8 +36,5 @@
 	},
 	"devDependencies": {
 		"nodemon": "^2.0.1"
-	},
-	"nodemonConfig": {
-		"ignore": [ "/*.json" ]
 	}
 }

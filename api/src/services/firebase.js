@@ -1,21 +1,10 @@
 import admin from 'firebase-admin';
-import dontEnv from 'dotenv';
-import jsonFile from 'jsonfile';
-import keys from './keys';
-
-dontEnv.config();
-const file = `${__dirname}/../../keys.json`;
-console.log(file);
+import keys from './serverCert.json';
 
 let db;
-jsonFile
-	.writeFile(file, keys, { flag: 'a' })
-	.then(() => {
-		admin.initializeApp({
-			credential: admin.credential.cert(require('./keys.json')),
-		});
-		db = admin.firestore();
-	})
-	.catch((error) => console.log(error));
 
+admin.initializeApp({
+	credential: admin.credential.cert(keys),
+});
+db = admin.firestore();
 export default db;
