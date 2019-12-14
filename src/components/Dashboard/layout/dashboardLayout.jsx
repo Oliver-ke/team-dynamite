@@ -39,7 +39,7 @@ const DashboardLayout = props => {
         <nav className="mobile-nav">
           <div>
             <Link to="/dashboard/" className="sidenav-links">
-              Feeds
+              Panic Alerts
             </Link>
           </div>
 
@@ -51,7 +51,7 @@ const DashboardLayout = props => {
 
           <div>
             <Link to="/dashboard/users" className="sidenav-links">
-              Users
+              Create Users
             </Link>
           </div>
           <div>
