@@ -4,6 +4,7 @@ import Landing from './Landing/';
 import Login from './Login/';
 import Error from './Error/';
 import Dashboard from './Dashboard/layout/dashboardLayout';
+import UserDashboard from './User/'
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import store from '../store';
 import { Provider } from 'react-redux';
@@ -18,6 +19,7 @@ const App = () => {
 					<Route path="/auth" component={Login} />
 					<Route path="/design" component={Dashboard} />
 					<PrivateRoute path="/dashboard" component={Dashboard} />
+          <Route path="/user/:name" component={UserDashboard} />
 					<Route component={Error} />
 				</Switch>
 			</Router>

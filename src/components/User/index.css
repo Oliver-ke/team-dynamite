@@ -1,0 +1,22 @@
+.user-panic-btn{
+    width: 300px;
+    height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    transition-duration: 3s;
+}
+
+.user-panic-btn:hover{
+    transform: scale(1.1);
+}
+.user-panic-container{
+    margin-top: 5%;
+    text-align: center;
+}
+.user-panic-container p{
+    font-size: 25px;
+}
+.user-panic-btn-container{
+    margin: 5% auto;
+    width: 300px;
+}
