@@ -1,29 +1,53 @@
 body {
-    font-family: "Raleway", sans-serif;
-  }
-  p {
-    font-size: 17px;
-  }
-  .sidenav-container {
-    position: fixed;
-    width: 250px;
-    height: 100vh;
-  }
-  .sidenav-container div{
-    margin-bottom: 8%;
-    margin-left: 5%;
-  }
-  .sidenav-links{
-    color: gray;
-    font-size: 20px;
-  }
-  .sidenav-links:hover{
-    text-decoration: none;
-  }
+	font-family: "Raleway", sans-serif;
+}
+p {
+	font-size: 17px;
+}
+.sidenav-container {
+	position: fixed;
+	width: 250px;
+	height: 100vh;
+}
+.sidenav-container div {
+	margin-bottom: 8%;
+	margin-left: 5%;
+}
+.sidenav-links {
+	color: gray;
+	font-size: 20px;
+}
+.sidenav-links:hover {
+	text-decoration: none;
+}
 
-  /* THIS IS THE STYLING FOR THE DESKTOP SIDENAV */
-  @media only screen and (max-width: 500px){
-    .entire-sidenav{
-      display: none;
-    }
-  }
+.user-form {
+	margin-top: 5%;
+}
+
+.user-form input {
+	display: block;
+	width: 70%;
+	margin-bottom: 2%;
+	padding: 1%;
+}
+
+.user-form button {
+	padding: 1% 6%;
+	border: none;
+	background-color: rgb(1, 1, 110);
+	font-weight: bold;
+	color: white;
+	margin: 0 auto;
+	transition-duration: .3s;
+}
+.user-form button:hover {
+	transform: scale(1.1);
+}
+
+/* THIS IS THE STYLING FOR THE DESKTOP SIDENAV */
+@media only screen and (max-width: 500px) {
+	.entire-sidenav {
+		display: none;
+	}
+}
