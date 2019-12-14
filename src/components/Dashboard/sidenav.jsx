@@ -11,19 +11,19 @@ const Sidenav = props => {
         <div style={{marginTop: "15%", }}>
           <div>
             <Link to="/dashboard/" className="sidenav-links">
-              Feeds
+              Panic Alerts
             </Link>
           </div>
 
           <div>
             <Link to="/dashboard/pinnedfeeds" className="sidenav-links">
-              Pinned Feeds
+              Pinned Panics
             </Link>
           </div>
 
           <div>
             <Link to="/dashboard/users" className="sidenav-links">
-              Users
+              Create Users
             </Link>
           </div>
           <div>
